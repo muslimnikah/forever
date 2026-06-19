@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Muslim Nikah Matrimony is a 100% free and halal non-profit service helping Muslims find righteous life partners."
+    />
+    <title>Muslim Nikah Matrimony | 100% Free & Halal Service</title>
+
+    <!-- Google Fonts: clean, modern typography for a trustworthy feel. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Muslim Nikah Matrimony home">
+          <span class="brand-mark" aria-hidden="true">MN</span>
+          <span class="brand-text">Muslim Nikah Matrimony</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="primary-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">Trusted community service</p>
+          <h1>Muslim Nikah Matrimony - 100% Free &amp; Halal Service</h1>
+          <p class="hero-subtitle">
+            Helping Muslims find their righteous life partner with dignity,
+            privacy, and sincerity in accordance with Islamic values.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#biodata">Get Started</a>
+            <a class="btn btn-outline" href="#rules">View Rules</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-rules" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About the service</p>
+          <h2 id="about-title">A sincere, no-profit matrimony initiative</h2>
+        </div>
+
+        <div class="two-column">
+          <article class="info-panel">
+            <h3>Completely Free</h3>
+            <p>
+              Muslim Nikah Matrimony is a non-profit service created to make the
+              nikah search simpler, respectful, and accessible for families and
+              individuals seeking marriage for the sake of Allah.
+            </p>
+            <p>
+              There are no registration fees, hidden charges, paid promotions,
+              or commercial matchmaking packages.
+            </p>
+          </article>
+
+          <article class="rules-panel" id="rules" aria-labelledby="rules-title">
+            <h3 id="rules-title">Strict Group Rules</h3>
+            <ul class="rules-list">
+              <li>
+                <strong>Privacy &amp; Respect:</strong> Treat every biodata and
+                conversation with dignity. Sharing private details outside the
+                group is not allowed.
+              </li>
+              <li>
+                <strong>Verification Required:</strong> Profiles must provide
+                accurate information and may be verified by the admin before
+                sharing.
+              </li>
+              <li>
+                <strong>No Commercial Ads:</strong> Business promotions, paid
+                services, spam, and unrelated posts are strictly prohibited.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section biodata-section" id="biodata" aria-labelledby="biodata-title">
+        <div class="section-heading">
+          <p class="eyebrow">Ready to begin</p>
+          <h2 id="biodata-title">Submit Your Biodata</h2>
+          <p>
+            Fill the form honestly and send it directly to the admin on
+            WhatsApp for review according to the group process.
+          </p>
+        </div>
+
+        <!-- Biodata submission form: validates locally and opens WhatsApp with a formatted message. -->
+        <form class="biodata-form" id="biodata-form" novalidate>
+          <div class="form-card">
+            <h3>Personal Information</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="fullName" name="fullName" autocomplete="name" aria-describedby="fullName-error" required />
+                <small class="error-message" id="fullName-error" role="alert"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="age">Age <span aria-hidden="true">*</span></label>
+                <input type="number" id="age" name="age" min="18" max="80" inputmode="numeric" aria-describedby="age-error" required />
+                <small class="error-message" id="age-error" role="alert"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="gender">Gender <span aria-hidden="true">*</span></label>
+                <select id="gender" name="gender" aria-describedby="gender-error" required>
+                  <option value="">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+                <small class="error-message" id="gender-error" role="alert"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="maritalStatus">Marital Status <span aria-hidden="true">*</span></label>
+                <select id="maritalStatus" name="maritalStatus" aria-describedby="maritalStatus-error" required>
+                  <option value="">Select status</option>
+                  <option value="Never Married">Never Married</option>
+                  <option value="Divorced">Divorced</option>
+                  <option value="Widowed">Widowed</option>
+                  <option value="Separated">Separated</option>
+                </select>
+                <small class="error-message" id="maritalStatus-error" role="alert"></small>
+              </div>
+
+              <div class="form-field form-field-wide">
+                <label for="location">Location <span aria-hidden="true">*</span></label>
+                <input type="text" id="location" name="location" autocomplete="address-level2" aria-describedby="location-error" required />
+                <small class="error-message" id="location-error" role="alert"></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Education &amp; Profession</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="education">Education <span aria-hidden="true">*</span></label>
+                <input type="text" id="education" name="education" aria-describedby="education-error" required />
+                <small class="error-message" id="education-error" role="alert"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="profession">Profession <span aria-hidden="true">*</span></label>
+                <input type="text" id="profession" name="profession" aria-describedby="profession-error" required />
+                <small class="error-message" id="profession-error" role="alert"></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Islamic Information</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="deeniBalance">Deeni/Dunyawi Balance</label>
+                <input type="text" id="deeniBalance" name="deeniBalance" />
+              </div>
+
+              <div class="form-field">
+                <label for="religiousPractice">Religious Practice</label>
+                <input type="text" id="religiousPractice" name="religiousPractice" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Family Information</h3>
+            <div class="form-field">
+              <label for="familyDetails">Family Details</label>
+              <textarea id="familyDetails" name="familyDetails" rows="4"></textarea>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Partner Preferences</h3>
+            <div class="form-field">
+              <label for="expectations">Expectations from Spouse</label>
+              <textarea id="expectations" name="expectations" rows="4"></textarea>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Contact Information</h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="contactNumber">Contact Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="contactNumber" name="contactNumber" autocomplete="tel" aria-describedby="contactNumber-error" required />
+                <small class="error-message" id="contactNumber-error" role="alert"></small>
+              </div>
+
+              <div class="form-field">
+                <label for="guardianContact">Guardian Contact</label>
+                <input type="tel" id="guardianContact" name="guardianContact" autocomplete="tel" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <h3>Additional Notes</h3>
+            <div class="form-field">
+              <label for="additionalNotes">Additional Notes</label>
+              <textarea id="additionalNotes" name="additionalNotes" rows="4"></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button class="btn btn-primary" id="send-biodata" type="submit">
+              Send Biodata
+            </button>
+            <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div>
+          <h2>Muslim Nikah Matrimony</h2>
+          <p>
+            Copyright &copy; <span id="current-year"></span> Muslim Nikah
+            Matrimony. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <p>
+            Safety disclaimer: Please verify all information independently,
+            involve guardians/family, and follow Islamic etiquette before making
+            any decision.
+          </p>
+          <a class="footer-link" href="https://wa.me/" target="_blank" rel="noopener">
+            Join WhatsApp Group / Contact Admin
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
